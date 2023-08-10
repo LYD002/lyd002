@@ -1,0 +1,379 @@
+/* 
+Color pallete. This section defines variables for the color pallete,
+so that we can refer to particular colors by name instead of hexadecimal values.
+This is applied to the 'root' psuedo-element, which just means that these color
+variables are available to be used anywhere in our html document
+*/
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    /* add in other color variables for color pallete */
+}
+
+/* Defines the main container size, we are limiting to 72em max and centring in the viewport */
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    padding: 10px; /* Adjust the padding value */
+    /* TODO: set the main font color */
+}
+
+/* Here we define the aspects of style of our elements other than their grid layout */
+
+.banner {
+    /* TODO: banner styling */
+    background-color: #4FBCEB;
+    font-family: sans-serif;
+}
+
+.banner-title {
+    /* TODO: banner main title font styling */
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: -1.8px;
+}
+
+.banner-subtitle {
+    /* TODO: banner subtitle font styling */
+    font-size: 1.7em;
+    text-align: center;
+    letter-spacing: -1.8px;
+}
+
+.section {
+    font-size: 1.10em;
+    color: #4FBCEB;
+    margin-bottom: 25px;
+
+}
+
+.heading {
+    font-size: 2.4em;
+}
+
+.byline {
+    font-size: 1.2em;
+    margin-top: 8px; /* Add padding above the byline */
+}
+
+.title {
+    background-color: #D9D9D9;
+    padding: 20px; 
+    max-width: 950px; /* Limit the maximum width of the text content */
+}
+
+#profile-image {
+    max-width: 100%;
+    height: auto;
+    padding: 10px; /* Add padding around the image */
+}
+
+.articlewriter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px; /* Add padding above the whole content */
+    margin-left: -700px;
+  }
+  
+  .profile-image {
+    margin-right: 10px;
+  }
+  
+  .bloggername {
+    color: #8C8C8C;
+    font-size: 0.85em;
+    margin-top: 10px; /* Add padding above the text */
+  }
+
+.content {
+    /* TODO: style the card as a column based flexbox with rounded corners */
+    font-size: 1em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+
+.content > *:not(img) {
+    max-width: 950px; /* Limit the maximum width of the text content */
+    margin: 0 auto; /* Center align the text content horizontally */
+    line-height: 1.3; /* Adjust this value to increase or decrease line spacing */
+}
+
+.left-align {
+    text-align: left;
+    padding: 5px 0; /* Adjust the padding values */
+}
+
+.vanessablurb,
+.markblurb {
+    font-size: 0.7em;
+    color: #8C8C8C;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+.firstparagraph,
+.secondparagraph,
+.thirdparagraph,
+.fourthparagraph,
+.fifthparagraph,
+.sixthparagraph,
+.seventhparagraph {
+    padding: 15px 0; /* Adjust the padding values */
+}
+
+.firstparagraph {
+padding: 30px 0; 
+}
+
+.secondparagraph {
+    padding: 30px 0; 
+    }
+
+.thirdparagraph {
+    padding: 30px 0; 
+}
+
+.fourthparagraph {
+    padding: 30px 0; 
+    }
+    
+    .fifthparagraph {
+        padding: 30px 0; 
+        }
+    
+    .sixthparagraph {
+        padding: 10px 0; 
+    }
+
+.seventhparagraph {
+    padding: 30px 0; 
+}
+
+.vanessablurb {
+    font-size: 0.7em;
+    color: #8C8C8C;
+}
+
+.thirdparagraph left-align {
+    text-align: left;
+    padding: 5px 0px;
+}
+
+.markblurb {
+    font-size: 0.7em;
+    color: #8C8C8C;
+}
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.team-member-card-image {
+    width: 100%;
+}
+
+.team-member-card-blurb {
+    /* TODO: style the blurb with padding */
+}
+
+.our-clients-title {
+    /* TODO: style the 'Our Clients' text font */
+}
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.client-icon {
+    width: 100%;
+}
+
+/* now we create names for the grid areas for specific elements */
+#banner {
+    /* TODO: give the grid-area a name */
+    grid-area: ban;
+}
+
+#title {
+    grid-area: tle;
+}
+
+#articlewriter {
+    grid-area: shg;
+}
+  
+#firstparagraph {
+    grid-area: 1pr;
+}
+
+#pexels-olia-danilevich-5309580.jpg {
+    grid-area: im1;
+}
+
+#secondparagraph {
+    grid-area: 2pr;
+}
+
+#pexels-edmond-dantÃ¨s-4347368.jpg {
+    grid-area: im2;
+}
+
+#vanessablurb image-caption {
+    grid-area: vbl;
+}
+
+#thirdparagraph {
+    grid-area: 3pr;
+}
+#joshua-hoehne-BeGCWVqpucE-unsplash.jpg {
+    grid-area: im3;
+}
+
+#fourthparagraph {
+    grid-area: 4pr;
+}
+
+#vinicius-amnx-amano-MvJezf8FT4o-unsplash.png {
+    grid-area: im4;
+}
+
+#fifthparagraph {
+    grid-area: 5pr;
+}
+
+#sixthparagraph {
+    grid-area: 6pr;
+}
+
+#seventhparagraph {
+    grid-area: 7pr;
+}
+
+#pexels-august-de-richelieu-4260642.jpg {
+    grid-area: im5;
+}
+
+#markblurb image-caption {
+    grid-area: mbl;
+}
+
+/* Use a flexible layout grid */
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+/* 
+Responsive Layout breakpoints. We start 'mobile-first' i.e. we define how the layout should look
+for the smallest screen sizes. In this case we want a single column that spans the main container.
+Because this CSS definition comes first, it will apply by default. Then we override it below with 
+media queries for progressively bigger screen widths
+*/
+.main-container {
+    /* TODO: setup the grid-template for mobile phone layout */
+    grid-template:
+    "ban ban ban ban" minmax(4em, auto)
+     " .   .   .   .  "minmax(1em, auto)
+     "tle tle tle tle" minmax(10em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "shg shg  .   . " minmax(4em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "1pr 1pr 1pr 1pr" minmax(4em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     " .  im1 im1  . " minmax(8em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "2pr 2pr 2pr 2pr" minmax(4em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     " .  im2 im2  . " minmax(8em, auto)
+     " .   .   .   . " minmax(1em, auto)
+     " .  vbl vbl  . " minmax(2em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "3pr 3pr im3 im3" minmax(6em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "im4 im4 4pr 4pr" minmax(8em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "5pr 5pr 5pr 5pr" minmax(4em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "6pr 6pr 6pr 6pr" minmax(4em, auto)
+     " .   .   .   . " minmax(2em, auto)
+     "7pr 7pr im5 im5" minmax(10em, auto)
+     " .   .   .   . " minmax(1em, auto)
+     " .   .  mbl mbl" minmax(2em, auto)
+     " .   .   .   . " minmax(4em, auto)
+
+     
+}
+
+@media (min-width: 50em) {
+    .main-container {
+        grid-template:
+            /* TODO: setup the grid-template for tablet layout */
+            "ban ban ban ban" minmax(8em, auto)
+            " .   .   .   .  "minmax(1em, auto)
+            "tle tle tle tle" minmax(22em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "shg shg  .   . " minmax(4em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "1pr 1pr 1pr 1pr" minmax(6em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            " .  im1 im1  . " minmax(8em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "2pr 2pr 2pr 2pr" minmax(6em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            " .  im2 im2  . " minmax(8em, auto)
+            " .   .   .   . " minmax(1em, auto)
+            " .  vbl vbl  . " minmax(2em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "3pr 3pr im3 im3" minmax(6em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "im4 im4 4pr 4pr" minmax(12em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "5pr 5pr 5pr 5pr" minmax(6em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "6pr 6pr 6pr 6pr" minmax(6em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            "7pr 7pr im5 im5" minmax(12em, auto)
+            " .   .   .   . " minmax(1em, auto)
+            " .   .  mbl mbl" minmax(2em, auto)
+            " .   .   .   . " minmax(6em, auto)
+    }
+
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        /* TODO: setup the grid-template for desktop layout */
+        grid-template:
+            "ban ban ban ban" minmax(12em, auto)
+            " .   .   .   .  "minmax(1em, auto) 
+            "tle tle tle tle" minmax(24em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "shg shg  .   . " minmax(6em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "1pr 1pr 1pr 1pr" minmax(6em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            " .  im1 im1  . " minmax(8em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "2pr 2pr 2pr 2pr" minmax(6em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            " .  im2 im2  . " minmax(14em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            " .  vbl vbl  . " minmax(2em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "3pr 3pr im3 im3" minmax(6em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "im4 im4 4pr 4pr" minmax(12em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "5pr 5pr 5pr 5pr" minmax(6em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "6pr 6pr 6pr 6pr" minmax(6em, auto)
+            " .   .   .   . " minmax(4em, auto)
+            "7pr 7pr im5 im5" minmax(14em, auto)
+            " .   .   .   . " minmax(2em, auto)
+            " .   .  mbl mbl" minmax(4em, auto)
+            " .   .   .   . " minmax(8em, auto)
+    }
+}
