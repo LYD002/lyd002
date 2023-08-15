@@ -73,6 +73,7 @@ variables are available to be used anywhere in our html document
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 40px; /* Add padding above the whole content */
   }
   
   .profile-image {
@@ -285,7 +286,7 @@ media queries for progressively bigger screen widths
      " .   .  mbl mbl" minmax(2em, auto)
      " .   .   .   . " minmax(4em, auto)
 
-     
+
 }
 
 @media (min-width: 50em) {
