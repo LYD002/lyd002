@@ -74,6 +74,7 @@ variables are available to be used anywhere in our html document
     align-items: center;
     justify-content: flex-start;
     margin-top: 40px; /* Add padding above the whole content */
+    margin-left: -700px;
   }
   
   .profile-image {
@@ -322,7 +323,6 @@ media queries for progressively bigger screen widths
             " .   .  mbl mbl" minmax(2em, auto)
             " .   .   .   . " minmax(6em, auto)
     }
-    
 
 }
 
@@ -361,6 +361,6 @@ media queries for progressively bigger screen widths
     }
 
     .articlewriter {
-        margin-left: -700px;
+        
     }
 }
