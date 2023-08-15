@@ -322,10 +322,7 @@ media queries for progressively bigger screen widths
             " .   .  mbl mbl" minmax(2em, auto)
             " .   .   .   . " minmax(6em, auto)
     }
-
-    .articlewriter {
-        margin: 0px;
-    }
+    
 
 }
 
