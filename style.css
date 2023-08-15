@@ -173,6 +173,23 @@ padding: 30px 0;
     color: #8C8C8C;
 }
 
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.team-member-card-image {
+    width: 100%;
+}
+
+.team-member-card-blurb {
+    /* TODO: style the blurb with padding */
+}
+
+.our-clients-title {
+    /* TODO: style the 'Our Clients' text font */
+}
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.client-icon {
+    width: 100%;
+}
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -358,9 +375,5 @@ media queries for progressively bigger screen widths
             " .   .   .   . " minmax(2em, auto)
             " .   .  mbl mbl" minmax(4em, auto)
             " .   .   .   . " minmax(8em, auto)
-    }
-
-    .articlewriter {
-        
     }
 }
