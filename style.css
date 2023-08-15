@@ -74,7 +74,6 @@ variables are available to be used anywhere in our html document
     align-items: center;
     justify-content: flex-start;
     margin-top: 40px; /* Add padding above the whole content */
-    margin-left: -700px;
   }
   
   .profile-image {
@@ -173,23 +172,6 @@ padding: 30px 0;
     color: #8C8C8C;
 }
 
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.team-member-card-image {
-    width: 100%;
-}
-
-.team-member-card-blurb {
-    /* TODO: style the blurb with padding */
-}
-
-.our-clients-title {
-    /* TODO: style the 'Our Clients' text font */
-}
-
-/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.client-icon {
-    width: 100%;
-}
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -341,6 +323,10 @@ media queries for progressively bigger screen widths
             " .   .   .   . " minmax(6em, auto)
     }
 
+    .articlewriter {
+        margin: 0px;
+    }
+
 }
 
 @media (min-width: 75em) {
@@ -375,5 +361,9 @@ media queries for progressively bigger screen widths
             " .   .   .   . " minmax(2em, auto)
             " .   .  mbl mbl" minmax(4em, auto)
             " .   .   .   . " minmax(8em, auto)
+    }
+
+    .articlewriter {
+        margin-left: -700px;
     }
 }
