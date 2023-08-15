@@ -73,7 +73,6 @@ variables are available to be used anywhere in our html document
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 40px; /* Add padding above the whole content */
   }
   
   .profile-image {
