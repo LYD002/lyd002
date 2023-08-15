@@ -48,8 +48,9 @@ variables are available to be used anywhere in our html document
 
 }
 
+
 .heading {
-    font-size: 2.4em;
+    font-size: 2.6em;
 }
 
 .byline {
@@ -85,19 +86,26 @@ variables are available to be used anywhere in our html document
     font-size: 0.85em;
     margin-top: 10px; /* Add padding above the text */
   }
+  
+  .timestamp {
+    color: #c7c7c7; 
+    margin-left: 5px; /* Add some margin to create space */
+}
+ 
+  
 
 .content {
     /* TODO: style the card as a column based flexbox with rounded corners */
     font-size: 1em;
 }
 
-.content {
+/*.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     padding: 10px 20px;
-}
+} */
 
 .content > *:not(img) {
     max-width: 950px; /* Limit the maximum width of the text content */
@@ -125,7 +133,8 @@ variables are available to be used anywhere in our html document
 .fourthparagraph,
 .fifthparagraph,
 .sixthparagraph,
-.seventhparagraph {
+.seventhparagraph, 
+.eighthparagraph {
     padding: 15px 0; /* Adjust the padding values */
 }
 
@@ -172,6 +181,11 @@ padding: 30px 0;
     color: #8C8C8C;
 }
 
+.eighthparagraph {
+    padding: 30px 0;
+    text-align: left;
+
+}
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -366,4 +380,6 @@ media queries for progressively bigger screen widths
     .articlewriter {
         margin-left: -700px;
     }
+
+    
 }
