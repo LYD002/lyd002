@@ -323,10 +323,6 @@ media queries for progressively bigger screen widths
             " .   .   .   . " minmax(6em, auto)
     }
 
-    .articlewriter {
-        margin: 0px;
-    }
-
 }
 
 @media (min-width: 75em) {
@@ -363,7 +359,4 @@ media queries for progressively bigger screen widths
             " .   .   .   . " minmax(8em, auto)
     }
 
-    .articlewriter {
-        margin-left: -700px;
-    }
 }
