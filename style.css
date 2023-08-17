@@ -91,6 +91,12 @@ variables are available to be used anywhere in our html document
     color: #c7c7c7; 
     margin-left: 5px; /* Add some margin to create space */
 }
+
+.thanks {
+    color: #c4c3c3;
+    display: block;
+    margin-top: 10px; /* Adjust the value as needed */
+}
  
   
 
@@ -184,6 +190,7 @@ padding: 30px 0;
 .eighthparagraph {
     padding: 30px 0;
     text-align: left;
+    margin-bottom: 2em; /* Adjust the value as needed */
 
 }
 
